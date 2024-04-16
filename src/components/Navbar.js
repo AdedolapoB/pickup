@@ -25,12 +25,15 @@ const Navbar = () => {
     <nav>
       <div className="logo">PICKUP AT EASE</div>
       <div className="nav-links">
-        <NavLink to="/" end>Home</NavLink>
-        <NavLink to="/location-hours">Location & Hours</NavLink>
-        <NavLink to="/track-package">Track Package</NavLink>
-        <NavLink to="/faq">FAQ</NavLink>
-        <NavLink to="/login">Login</NavLink>
+          <NavLink to="/" end>Home</NavLink>
+          <NavLink to="/location-hours">Location & Hours</NavLink>
+          <a href="https://pickup-at-ease-frontend-dtzb.zeet-myteam34.zeet.app/login" target="_blank" rel="noopener noreferrer">Track Package</a>
+
+          <NavLink to="/faq">FAQ</NavLink>
+          {/* Replace the NavLink for Login with an <a> tag */}
+          <a href="https://pickup-at-ease-frontend-dtzb.zeet-myteam34.zeet.app/login" target="_blank" rel="noopener noreferrer">Login</a>
       </div>
+
     </nav>
   );
 };

@@ -2,65 +2,73 @@
 nav {
   background-color: #004165; /* Deep blue background color */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 2rem;
+  justify-content: space-between; /* Space items out */
+  align-items: center; /* Vertically center items */
+  padding: 1rem 2rem; /* Increase padding for better spacing */
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: all 0.5s ease-in-out; /* Smooth transition for any changes */
 }
 
 .logo {
   font-weight: 700; /* Extra bold */
-  font-size: 28px; /* Larger size */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A more distinct font */
-  letter-spacing: 1px; /* Spacing out the letters */
-  color: #00B4D8; /* A color that stands out, light blue */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+  font-size: 1.75rem; /* Adjust font size */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Consistent font family */
+  letter-spacing: 0.05rem; /* Adjust letter spacing */
+  color: #00B4D8; /* Light blue color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow for depth */
   cursor: pointer;
+  margin-right: 2rem; /* Ensure some space between logo and nav links */
 }
 
-/* Rest of the styles remain the same */
-
-
 .nav-links {
-  display: flex;
+  display: flex; /* Display links in a row */
+  gap: 1rem; /* Add gap between links */
   align-items: center;
-  height: 100%;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  padding: 1rem 1.5rem;
-  font-size: 16px;
+  padding: 0.5rem 1rem; /* Adjust padding */
+  font-size: 1rem; /* Adjust font size */
   font-weight: 500;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border-radius: 4px; /* Rounded corners */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transitions for hover effects */
 }
 
 .nav-links a:hover, .nav-links a:focus {
-  color: #00843D; /* Slight change in color for interactivity */
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
+  color: #00B4D8; /* Change color for interactivity */
+  background-color: rgba(255, 255, 255, 0.2); /* Highlight on hover and focus */
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; /* Toggle to a hamburger menu or similar on small screens */
+@media (max-width: 868px) {
+  .nav {
+    padding: 0.5rem 1rem; /* Reduce padding on smaller screens */
   }
 
-  /* Add more responsive styling as needed */
-}
+  .logo {
+    font-size: 1.5rem; /* Adjust logo size on smaller screens */
+  }
 
-/* Add a transition effect to the whole navbar for when the page scrolls */
-nav {
-  transition: all 0.5s ease-in-out;
-}
+  .nav-links {
+    flex-direction: row; /* Keep links in a row on small screens */
+    justify-content: flex-end; /* Align links to the end */
+    gap: 0.5rem; /* Reduce gap between links */
+  }
 
-/* This class could be toggled on scroll with JavaScript */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  .nav-links a {
+    padding: 0.5rem; /* Reduce padding for the links */
+    font-size: 0.9rem; /* Reduce font size to fit smaller screens */
+  }
+
+  .toggle-button {
+    display: block; /* Show toggle button */
+    /* Style your toggle button */
+  }
+
+  .nav-links.active {
+    display: flex; /* Display links when active */
+  }
 }

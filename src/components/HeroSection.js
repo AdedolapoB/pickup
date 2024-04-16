@@ -25,8 +25,8 @@ const HeroSection = () => {
    {
      title: "Sign Up",
      description: "Get your unique account and start using our services.",
-     to: "/signup", // Path to your sign-up page
-     linkText: "Learn more",
+     link: "https://pickup-at-ease-frontend-dtzb.zeet-myteam34.zeet.app/login", // Path to your sign-up page
+     linkText: "Sign Up",
      imgSrc: signUpImage,
      imgAlt: "Sign up"
    },
@@ -42,7 +42,7 @@ const HeroSection = () => {
     {
        title: "Get Notified",
        description: "We'll inform you when your package is ready for pickup.",
-       to: "/get-notified", // Use the path defined in your routes
+      link: "https://pickup-at-ease-frontend-dtzb.zeet-myteam34.zeet.app/login",
        linkText: "Notification info",
        imgSrc: getNotifiedImage,
        imgAlt: "Get Notified"

@@ -12,7 +12,10 @@ const GetNotified = () => {
       </p>
       <form className="notification-form">
         <input type="email" placeholder="Your Email" name="email" required />
-        <button type="submit" className="notify-btn">Notify Me</button>
+        <a href="https://pickup-at-ease-frontend-dtzb.zeet-myteam34.zeet.app/login"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="notify-btn">Notify Me</a>
       </form>
     </div>
   );

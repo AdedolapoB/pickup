@@ -8,9 +8,9 @@ const Location = () => {
       <div className="contact-container">
         <div className="contact-info">
           <h2>GET IN TOUCH</h2>
-          <p>Hey! We are looking forward to start a project with you!</p>
+          <p>Hey! We are looking forward to delivery your pacakge to your doorstep</p>
           <p className="contact-description">
-            Etiam sit amet convallis erat – class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            📦 At Pick-up at Ease, we are not just delivering packages we are delivering peace of mind. With our streamlined service, we are excited to bring the ease of online shopping straight to your doorstep. Get ready to experience the joy of hassle-free deliveries with a touch of personal care. Because for us, every parcel is a promise of your trust, delivered safely by our team. 🚚💨 #AtEaseDelivery #HassleFreeShopping #DoorstepDelivery
           </p>
           <div className="social-links">
             {/* Icons can be sourced from a library like FontAwesome */}
@@ -21,12 +21,15 @@ const Location = () => {
         <div className="contact-details">
           <div className="phone-details">
             <h3>CALL US</h3>
-            <p>1 (234) 567-891</p>
-            <p>1 (234) 987-654</p>
+            <p>1 (416) 835-3154</p>
+            <p>1 (249) 876-7910</p>
           </div>
           <div className="location-details">
             <h3>LOCATION</h3>
-            <p>121 Rock Street, 21 Avenue, New York, NY 92103-9000</p>
+            <p>5, Rowntree Road, Toronto, Canada</p>
+            <p>37, Moon Valley Dr, Toronto, Canada</p>
+            <p>2267, Islington Avenue, Toronto, Canada</p>
+            <p>1, Amaron Avenue, Brampton, Canada</p>
           </div>
           <div className="hours-details">
             <h3>BUSINESS HOURS</h3>
